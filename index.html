@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pustakalaya - Indian E-Library</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <i class="fas fa-book-reader logo-icon"></i>
+                <h1>Pustakalaya</h1>
+            </div>
+            <nav>
+                <ul id="nav-menu">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#categories" class="nav-link">Categories</a></li>
+                    <li><a href="#featured" class="nav-link">Featured</a></li>
+                    <li><a href="#authors" class="nav-link">Authors</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-icon" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="page-section active">
+        <!-- Hero Section -->
+        <div class="hero">
+            <div class="container">
+                <h2>Discover Indian Literature</h2>
+                <p>Explore a vast collection of books from Indian authors across various genres and languages</p>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search by title, author, or genre...">
+                    <button>Search</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <main class="container">
+            <!-- Categories Section -->
+            <section class="categories">
+                <h2 class="section-title">Browse Categories</h2>
+                <div class="category-filters">
+                    <button class="active">All</button>
+                    <button>Hindi</button>
+                    <button>Regional</button>
+                    <button>Fiction</button>
+                    <button>Non-Fiction</button>
+                    <button>Classics</button>
+                </div>
+
+                <!-- Books Grid -->
+                <div class="books-grid">
+                    <!-- Book cards will be dynamically inserted here -->
+                </div>
+
+                <!-- Pagination -->
+                <div class="pagination">
+                    <button class="page-btn active" data-page="1">1</button>
+                    <button class="page-btn" data-page="2">2</button>
+                    <button class="page-btn" data-page="3">3</button>
+                    <button class="next-btn">Next →</button>
+                </div>
+            </section>
+        </main>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories" class="page-section">
+        <div class="container">
+            <h2 class="section-title">Book Categories</h2>
+            <div class="category-filters">
+                <button class="active">All</button>
+                <button>Fiction</button>
+                <button>Non-Fiction</button>
+                <button>Biography</button>
+                <button>History</button>
+                <button>Science</button>
+                <button>Technology</button>
+                <button>Philosophy</button>
+                <button>Poetry</button>
+            </div>
+
+            <div class="books-grid">
+                <!-- Category books will be loaded here -->
+            </div>
+
+            <div class="pagination">
+                <button class="page-btn active" data-page="1">1</button>
+                <button class="page-btn" data-page="2">2</button>
+                <button class="page-btn" data-page="3">3</button>
+                <button class="next-btn">Next →</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Section -->
+    <section id="featured" class="page-section">
+        <div class="container">
+            <h2 class="section-title">Featured Books</h2>
+            <p class="section-subtitle">
+                Discover our curated selection of must-read books from Indian authors
+            </p>
+
+            <div class="books-grid">
+                <!-- Featured books will be loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Authors Section -->
+    <section id="authors" class="page-section">
+        <div class="container">
+            <h2 class="section-title">Renowned Indian Authors</h2>
+            <p class="section-subtitle">
+                Explore the literary giants who have shaped Indian literature
+            </p>
+
+            <div class="authors-grid">
+                <div class="author-card">
+                    <div class="author-image">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3 class="author-name">Arundhati Roy</h3>
+                    <p class="author-books">The God of Small Things</p>
+                    <p>Booker Prize-winning author known for her powerful narratives</p>
+                </div>
+
+                <div class="author-card">
+                    <div class="author-image">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3 class="author-name">Jhumpa Lahiri</h3>
+                    <p class="author-books">The Namesake, Interpreter of Maladies</p>
+                    <p>Pulitzer Prize-winning author exploring the immigrant experience</p>
+                </div>
+
+                <div class="author-card">
+                    <div class="author-image">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3 class="author-name">Ruskin Bond</h3>
+                    <p class="author-books">The Room on the Roof, The Blue Umbrella</p>
+                    <p>Beloved author known for his children's literature and short stories</p>
+                </div>
+
+                <div class="author-card">
+                    <div class="author-image">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3 class="author-name">Amish Tripathi</h3>
+                    <p class="author-books">Shiva Trilogy, Ram Chandra Series</p>
+                    <p>Bestselling author known for his fictional works on Hindu gods</p>
+                </div>
+
+                <div class="author-card">
+                    <div class="author-image">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3 class="author-name">Chetan Bhagat</h3>
+                    <p class="author-books">Five Point Someone, 2 States</p>
+                    <p>Popular contemporary author known for his youth-centric novels</p>
+                </div>
+
+                <div class="author-card">
+                    <div class="author-image">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3 class="author-name">Amitav Ghosh</h3>
+                    <p class="author-books">The Shadow Lines, The Ibis Trilogy</p>
+                    <p>Acclaimed author known for his historical fiction and climate change writing</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="page-section">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <p class="section-subtitle">
+                Get in touch with us for any questions or feedback
+            </p>
+
+            <div class="contact-form">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" placeholder="Enter your name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="Enter your email">
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" placeholder="Enter the subject">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" placeholder="Type your message here"></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Send Message</button>
+            </div>
+
+            <div class="contact-info">
+                <h3>Visit Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Book Street, New Delhi, India</p>
+                <p><i class="fas fa-phone"></i> +91 9876543210</p>
+                <p><i class="fas fa-envelope"></i> info@pustakalaya.com</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Book Detail Modal -->
+    <div class="modal" id="book-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <div class="modal-book-image">
+                    <i class="fas fa-book"></i>
+                </div>
+                <div class="modal-book-details">
+                    <h2 class="modal-book-title">Book Title</h2>
+                    <p class="modal-book-author">By Author Name</p>
+                    <p class="modal-book-description">
+                        Book description will appear here.
+                    </p>
+                    <div class="modal-price-section">
+                        <span class="modal-current-price">₹0</span>
+                        <span class="modal-original-price">₹0</span>
+                        <span class="modal-discount-badge">0% OFF</span>
+                    </div>
+                    <div class="action-buttons">
+                        <button class="buy-now-btn">Buy Now</button>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About Pustakalaya</h3>
+                    <p>Pustakalaya is India's premier e-library platform, dedicated to promoting Indian literature and
+                        making it accessible to readers worldwide.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home" class="footer-link">Home</a></li>
+                        <li><a href="#categories" class="footer-link">Categories</a></li>
+                        <li><a href="#featured" class="footer-link">Featured Books</a></li>
+                        <li><a href="#authors" class="footer-link">Indian Authors</a></li>
+                        <li><a href="#contact" class="footer-link">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Book Street, New Delhi, India</p>
+                    <p><i class="fas fa-phone"></i> +91 9876543210</p>
+                    <p><i class="fas fa-envelope"></i> info@pustakalaya.com</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Pustakalaya - Indian E-Library. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="/js/scrpit.js"></script>
+</body>
+
+</html>
